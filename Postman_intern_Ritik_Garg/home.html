@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>YouTube</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+</head>
+<body>  
+  <div><h1 class="mt-5" style="  font-style: italic; color: brown">Play it Your Way!!</h1>
+</div>
+<div class="btn-group" align="center">
+<button  onclick="genre('Classical songs')"  style=margin-left:100px>Classical </button>
+<button  onclick="genre('Pop songs')" >Pop </button>
+<button  onclick="genre('Jazz songs')" >Jazz </button>
+<button  onclick="genre('Rock songs')" >Rock </button>
+<button  onclick="genre('Romantic songs')" >Romantic </button>
+<button  onclick="genre('Retro songs')" >Retro </button>
+<button  onclick="genre('Dance songs')" >Dance </button>
+<button  onclick="genre('Travelling songs')" >Travel </button>
+<button  onclick="genre('Hip-Hop songs')" >Hip-Hop </button>
+<button onclick="genre('party songs')" >Party </button>
+<button onclick="genre('sad songs')" >Sad </button>
+<button  onclick="genre('happy songs')" >Happy </button>
+<button  onclick="genre('chill songs')">Chill </button>
+</div>
+<br><hr><br>
+<input type="text" placeholder="Search here" id="search" class="search_1">   
+<button onclick="genre('searchfor')" class="submit_1" id="myBtn">GO</button>
+<div class="dropdown">
+  <button class="dropbtn">Sort</button>
+  <div class="dropdown-content">
+    <a onclick="sortbyname()">Sort by Name</a>
+    <a onclick="sortbydate()">Sort by Date</a>
+  </div>
+</div>
+<br><br><hr>
+ <div id="vid" class="row text-center" style="float:left ;overflow-x:hidden">
+</div>
+<script type="text/javascript" src="javascript.js"></script>
+</body>
+
+
+</html>
